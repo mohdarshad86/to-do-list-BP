@@ -1,0 +1,19 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "to-do-list-backend",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mohdarshad86/to-do-list-BP.git"
+  },
+  "author": "Batsy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mohdarshad86/to-do-list-BP/issues"
+  },
+  "homepage": "https://github.com/mohdarshad86/to-do-list-BP#readme"
+}
