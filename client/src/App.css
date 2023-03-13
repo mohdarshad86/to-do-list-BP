@@ -1,5 +1,3 @@
-
-
 body {
   width: 50%;
   margin: 0 auto;
@@ -15,7 +13,7 @@ header h1 {
   font-weight: 200;
 }
 
-input {
+.input {
   font-size: 20px;
   color: #2c3e50;
   width: 100%;
@@ -36,6 +34,11 @@ input {
 
 .task span {
   color: #FFFFFF;
+}
+
+.task p {
+  color: #FFFFFF;
+  font-size: .9rem;
 }
 
 .icon {
@@ -79,4 +82,11 @@ article {
   color: #FFF;
   background-color: #ee1630;
   width: 170px;
+}
+
+.button.primary {
+  margin-left: auto;
+  display: block;
+  background-color: blue;
+  color: white;
 }

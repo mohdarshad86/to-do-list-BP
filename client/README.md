@@ -1,7 +1,9 @@
 MEAN / MERN Stack Assignment
 PART 1: Create a form to save & edit task in database
 • Create components to create & edit task
-• TASK Schema
+
+# TASK Schema
+
 o Title (text)
 o Description (text)
 o Status (ENUM [Open, In-Progress, Completed])

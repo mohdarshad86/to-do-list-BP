@@ -2,8 +2,8 @@ const Todo = require('../model/Todo.js');
 
 const addTodo = async (req, res) => {
     try {
-        let data = req.body.data
-        const newTodo = await Todo.create({ data: data })
+        let data = req.body
+        const newTodo = await Todo.create(data)
         await newTodo.save();
 
         return res.status(200).send(newTodo);
@@ -43,10 +43,10 @@ const toggleTodoDone = async (req, res) => {
 const updateTodo = async (req, res) => {
     try {
         let paramId = req.params.id
-        let data = req.body.data
+        let data = req.body
         await Todo.findOneAndUpdate(
             { _id: paramId },
-            { data: data }
+            data
         )
 
         const todo = await Todo.findById(paramId);

@@ -14,12 +14,12 @@ export const todosReducers = (state = [], action) => {
             ))
         case actionTypes.UPDATE_TODO:
             return state.map(todo => (
-                todo._id === action.payload._id ? { ...todo, data: action.payload.data } : todo
+                todo._id === action.payload._id ? { ...todo, title: action.payload.title, description: action.payload.description } : todo
             ))
         case actionTypes.DELETE_TODO:
             return state.filter(todo => todo._id !== action.payload._id);
-        
-        default: 
+
+        default:
             return state;
     }
 }

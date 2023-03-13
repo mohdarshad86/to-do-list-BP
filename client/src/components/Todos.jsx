@@ -20,7 +20,7 @@ export const Todos = () => {
 
     useEffect(() => {
         dispatch(getAllTodos());
-    }, [])
+    }, [dispatch])
 
     const getTodos = () => {
         if (currentTab === ALL_TODOS) {
@@ -51,14 +51,14 @@ export const Todos = () => {
                             onClick={removeDoneTodos}
                             className="button clear"
                         >Remove Done Todos</button>
-                    ) : null    
+                    ) : null
                 }
             </div>
 
             <ul>
                 {
                     getTodos().map(todo => (
-                        <Todo 
+                        <Todo
                             key={todo._id}
                             todo={todo}
                         />
